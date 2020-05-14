@@ -40,7 +40,7 @@ export const navItems: INavData[] = [
       {
         name: 'RH',
         url: '/theme/typography',
-        icon: 'icon-puzzle'
+        icon: 'icon-people'
       },
       {
         name: 'Sócios',

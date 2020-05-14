@@ -19,23 +19,23 @@ export const navItems: INavData[] = [
   // },
   {
     name: 'Departamentos',
-    url: '/dashboard',
+    url: '/base',
     icon: 'icon-globe',
     children: [
       {
         name: 'Diretorias',
-        url: '/dashboard',
-        icon: 'icon-puzzle'
+        url: '/theme/typography',
+        icon: 'icon-cursor'
       },
       {
         name: 'Comercial',
-        url: '/dashboard',
+        url: '/theme/typography',
         icon: 'icon-basket'
       },
       {
         name: 'Operações',
         url: '/theme/typography',
-        icon: 'icon-puzzle'
+        icon: 'icon-calculator'
       },
       {
         name: 'RH',
@@ -56,13 +56,13 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Infrastrutura - TI',
-    url: '/dashboard',
+    url: '/base',
     icon: 'icon-speedometer',
     children: [
       {
         name: 'Controle e Processos',
         url: '/base/cards',
-        icon: 'icon-puzzle'
+        icon: ''
       },
       {
         name: 'Financeiro',
@@ -82,7 +82,7 @@ export const navItems: INavData[] = [
       {
         name: 'Servidores',
         url: '/theme/typography',
-        icon: 'icon-people'
+        icon: 'icon-wrench'
       }
     ]
   },
@@ -94,7 +94,7 @@ export const navItems: INavData[] = [
       {
         name: 'Financeiro',
         url: '/base/cards',
-        icon: 'icon-puzzle'
+        icon: 'icon-wallet'
       },
       {
         name: 'Fornecedores',
@@ -104,7 +104,7 @@ export const navItems: INavData[] = [
       {
         name: 'Projetos',
         url: '/theme/typography',
-        icon: 'icon-puzzle'
+        icon: 'icon-note'
       }
     ]
   },

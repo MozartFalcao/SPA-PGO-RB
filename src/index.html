@@ -1,13 +1,121 @@
+<!--
+* CoreUI 2 for Angular 9 - test bed
+* @version v2.9.0
+* @link https://coreui.io/angular/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+-->
 <!doctype html>
-<html lang="en">
+<html>
 <head>
+  <base href="./">
   <meta charset="utf-8">
-  <title>PGOSPA</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Projeto de Gestão Operacional">
+  <meta name="author" content="Mozart Falcão">
+  <meta name="keyword" content="Projeto,Operacional,RB,Gestão">
+	<link rel="shortcut icon" href="https://rb.com.br/wp-content/images/2019/06/cropped-favicon-32x32.png">
+  
+  <title>Gestão Operacional | RB</title>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // Shared ID
+    gtag('config', 'UA-118965717-3');
+    // Angular ID
+    gtag('config', 'UA-118965717-4');
+  </script>
+
+  <!-- reduced for brevity -->
+    
+    <!-- inline spinner styles to be able to display spinner right away -->
+    <style type="text/css">
+      body, html {
+        height: 100%;
+      }
+      
+      .logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      
+      }
+
+      .imagRb{
+        width: 5%;
+      }
+
+
+      .app-loading {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        height: 100%;
+      }
+
+      .app-loading .spinner {
+        height: 200px;
+        width: 200px;
+        animation: rotate 2s linear infinite;
+        transform-origin: center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .app-loading .spinner .path {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        animation: dash 1.5s ease-in-out infinite;
+        stroke-linecap: round;
+        stroke: rgb(243, 150, 9);
+      }
+
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35px;
+        }
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124px;
+        }
+      }
+    </style>
+
+
 </head>
-<body>
-  <app-root></app-root>
+<body class="app">
+  <!-- App Loading... -->
+  <!-- loading layout replaced by app after startupp -->
+  <div class="app-loading">
+    <div class="logo"><img class="imagRb" src="https://rb.com.br/wp-content/images/2019/06/rb-serviccca7os.png" alt=""> </div>
+    <svg class="spinner" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+  </div>
 </body>
 </html>

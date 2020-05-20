@@ -35,6 +35,7 @@ import { AppRoutingModule } from './app.routing';
 // Import 3rd party components
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NavBarComponent } from './containers/nav-bar/nav-bar.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { NavBarComponent } from './containers/nav-bar/nav-bar.component';
     AppComponent,
     ...APP_CONTAINERS,
     NavBarComponent,
+    LoginComponent,
   ],
   providers: [{
     provide: LocationStrategy,

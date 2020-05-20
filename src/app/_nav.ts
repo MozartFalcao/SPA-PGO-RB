@@ -3,7 +3,7 @@ import { INavData } from '../../node_modules/@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'PGO - RB',
+    name: 'GPO - RB',
     url: '/dashboard',
     icon: 'icon-home',
     badge: {
@@ -23,14 +23,14 @@ export const navItems: INavData[] = [
     icon: 'icon-globe',
     children: [
       {
-        name: 'Diretorias',
-        url: '/theme/typography',
-        icon: 'icon-cursor'
+        name: 'Comercial',
+        url: '/login',
+        icon: 'icon-basket'
       },
       {
-        name: 'Comercial',
+        name: 'Financeiro',
         url: '/theme/typography',
-        icon: 'icon-basket'
+        icon: 'icon-wallet'
       },
       {
         name: 'Operações',
@@ -40,7 +40,7 @@ export const navItems: INavData[] = [
       {
         name: 'RH',
         url: '/theme/typography',
-        icon: 'icon-people'
+        icon: 'icon-user-female'
       },
       {
         name: 'Sócios',
@@ -62,7 +62,7 @@ export const navItems: INavData[] = [
       {
         name: 'Controle e Processos',
         url: '/base/cards',
-        icon: ''
+        icon: 'icon-calculator'
       },
       {
         name: 'Financeiro',
@@ -72,12 +72,12 @@ export const navItems: INavData[] = [
       {
         name: 'Fornecedores',
         url: '/theme/typography',
-        icon: 'icon-puzzle'
+        icon: 'icon-social-facebook'
       },
       {
         name: 'Redes',
         url: '/theme/typography',
-        icon: 'icon-puzzle'
+        icon: 'icon-screen-desktop'
       },
       {
         name: 'Servidores',

@@ -1,0 +1,95 @@
+<div class="app flex-row align-items-center text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <form class="form-signin">
+        <img
+          class="mb-4"
+          src="https://rb.com.br/wp-content/images/2019/06/rb-serviccca7os.png"
+          alt=""
+          style="width: 60%;"
+        />
+        <h1 class="h3 mb-3 font-weight-normal">Gestão de Processos Operacionais</h1>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input
+          type="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Email"
+          required=""
+          autofocus=""
+        />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Password"
+          required=""
+        />
+        <!-- <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div> -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" >
+          Login
+        </button>
+        <p class="mt-5 mb-3 text-muted">© pandemicLabs</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 p-t-50 p-b-20">
+      <form class="login100-form validate-form">
+        <span class="login100-form-title p-b-50">
+          Gestão de Processos Operacionais
+        </span>
+        
+        <span class="login100-form-avatar">
+          <img src="https://rb.com.br/wp-content/images/2019/06/rb-serviccca7os.png" alt="Logo">
+        </span>
+
+        <div class="wrap-input100 validate-input m-t-50 m-b-35">
+          <input class="input100" type="text" name="Email">
+          <span class="focus-input100" data-placeholder="Email"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input m-b-50">
+          <input class="input100" type="password" name="pass">
+          <span class="focus-input100" data-placeholder="Senha"></span>
+        </div>
+
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" [routerLink]="['dashboard']"  >
+            Login
+          </button>
+        </div>
+
+        <ul class="login-more p-t-190">
+          <li class="m-b-8">
+            <span class="txt1">
+              Forgot
+            </span>
+
+            <a href="#" class="txt2">
+              Username / Password?
+            </a>
+          </li>
+
+          <li>
+            <span class="txt1">
+              Don’t have an account?
+            </span>
+
+            <a href="#" class="txt2">
+              Sign up
+            </a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div> -->

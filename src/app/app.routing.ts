@@ -21,7 +21,11 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
-      }
+      },
+      {
+        path: 'departamentos',
+        loadChildren: () => import('./views/departamentos/departamentos.module').then(m => m.DepartamentosModule)
+      },
     ]
   },
   {

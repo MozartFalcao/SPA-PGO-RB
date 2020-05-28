@@ -19,37 +19,37 @@ export const navItems: INavData[] = [
   // },
   {
     name: 'Departamentos',
-    url: '/base',
+    url: '/departamentos',
     icon: 'icon-globe',
     children: [
       {
         name: 'Comercial',
-        url: '/login',
+        url: '/departamentos/comercial',
         icon: 'icon-basket'
       },
       {
         name: 'Financeiro',
-        url: '/theme/typography',
+        url: '/departamentos/financeiro',
         icon: 'icon-wallet'
       },
       {
         name: 'Operações',
-        url: '/theme/typography',
+        url: '/departamentos/operacoes',
         icon: 'icon-calculator'
       },
       {
         name: 'RH',
-        url: '/theme/typography',
+        url: '/departamentos/rh',
         icon: 'icon-user-female'
       },
       {
         name: 'Sócios',
-        url: '/theme/typography',
+        url: '/departamentos/socios',
         icon: 'icon-people'
       },
       {
-        name: 'Tecnologia',
-        url: '/theme/typography',
+        name: 'tecnologia',
+        url: '/departamentos/tecnologia',
         icon: 'icon-screen-desktop'
       }
     ]
